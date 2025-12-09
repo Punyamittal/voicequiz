@@ -1,0 +1,22 @@
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.language-dropdown {
+  padding: 8px 12px;
+  border: 2px solid #404040;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  background: #1a1a1a;
+  transition: border-color 0.3s;
+  color: #ffffff;
+}
+
+.language-dropdown:focus {
+  outline: none;
+  border-color: #808080;
+}
+

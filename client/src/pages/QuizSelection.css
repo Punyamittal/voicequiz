@@ -1,0 +1,135 @@
+.quiz-selection-container {
+  min-height: calc(100vh - 80px);
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quiz-selection-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.quiz-selection-header h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-selection-header p {
+  color: #cccccc;
+  font-size: 1.1rem;
+}
+
+.quizzes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.quiz-card {
+  background: #2a2a2a;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #404040;
+}
+
+.quiz-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.quiz-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.quiz-card-header h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.quiz-status {
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.quiz-status.active {
+  background: #808080;
+  color: white;
+}
+
+.quiz-description {
+  color: #cccccc;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  min-height: 60px;
+}
+
+.quiz-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: #999999;
+}
+
+.start-quiz-btn {
+  width: 100%;
+  padding: 15px;
+  background: #000000;
+  color: white;
+  border: 1px solid #404040;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.start-quiz-btn:hover {
+  transform: translateY(-2px);
+}
+
+.no-quizzes {
+  text-align: center;
+  padding: 60px 20px;
+  background: #2a2a2a;
+  border-radius: 15px;
+  color: #cccccc;
+  border: 1px solid #404040;
+}
+
+.error-banner {
+  background: #2a2a2a;
+  color: #ff6666;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #666666;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .quizzes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

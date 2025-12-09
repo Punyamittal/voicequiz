@@ -1,0 +1,81 @@
+.leaderboard {
+  height: 100%;
+}
+
+.leaderboard-title {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leaderboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.leaderboard-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  border: 1px solid #404040;
+}
+
+.leaderboard-item:hover {
+  transform: translateX(5px);
+}
+
+.leaderboard-item.rank-1 {
+  background: #2a2a2a;
+  border: 2px solid #ffffff;
+}
+
+.leaderboard-item.rank-2 {
+  background: #2a2a2a;
+  border: 2px solid #cccccc;
+}
+
+.leaderboard-item.rank-3 {
+  background: #2a2a2a;
+  border: 2px solid #999999;
+}
+
+.rank-badge {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  min-width: 40px;
+  text-align: center;
+}
+
+.entry-info {
+  flex: 1;
+}
+
+.entry-name {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.entry-stats {
+  display: flex;
+  gap: 15px;
+  font-size: 0.85rem;
+  color: #cccccc;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px;
+  color: #999999;
+}
+
